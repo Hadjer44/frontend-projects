@@ -1,60 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+@font-face {
+  font-family: 'Inter Tight Black';
+  src: url(./asset/fonts/static/InterTight-Black.ttf);
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Helium Flexbox</title>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-</head>
+body {
+  background: rgb(29, 29, 29);
+  min-height: 50vw;
+  width: calc(100% - 5%);
+  font-family: "'Inter Tight Black", Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  filter: brightness(120%);
 
-<body>
-  <nav>
-    <h2>Helium</h2>
-    <ul>
-      <li>5G</li>
-      <li>Explorer</li>
-      <li>Ecosystem</li>
-    </ul>
-  </nav>
+  /* display: flex; */
+}
 
-  <section class="header">
-    <div class="header-left">
-      <div class="header-left-container">
-        <h1>People-Powered Networks</h1>
-        <h3>Start a Wireless Revolution</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid pariatur quae placeat veniam ratione
-          repellendus obcaecati atque quibusdam non!</p>
-      </div>
-    </div>
-    <div class="header-right">
-      <img src="./img/main.png" id="modem" alt="modem">
-    </div>
-  </section>
-
-  <section class="infos">
-    <div class="infos-left">
-      <h3>Core Technologies</h3>
-      <div class="btn-container">
-        <button>Tokens</button>
-        <button>Proof of Coverage</button>
-        <button>LongFi</button>
-      </div>
-    </div>
-    <div class="infos-right">
-      <h3>Our Investors</h3>
-      <div class="investors">
-        <div class="img-container">
-          <img src="./img/investlogo2blue.png" alt="investor-1">
-          <img src="./img/investlogo3blue.png" alt="investor-2">
-          <img src="./img/investlogo4blue.png" alt="investor-3">
-        </div>
-      </div>
-    </div>
-  </section>
+h2 {
+  padding: 0 180px 0 0;
+  /* text-align: center; */
+}
 
 
-</body>
+nav {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-</html>
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 0 0 0 200px;
+  align-items: end;
+}
+
+.header {
+  display: flex;
+  padding-top: 10px;
+}
+
+.header-left {
+  padding: 100px 150px 70px 15px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(68, 69, 152);
+  filter: contrast(180%);
+}
+
+.header-right {
+  padding-top: 50px;
+
+}
+
+.header-right img {
+  height: 500px;
+  /* position: absolute; */
+}
+
+/* --------------section info ------------------------- */
+.infos {
+  background: rgb(13, 13, 13);
+  /* margin-bottom: 3px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos h3 {
+  color: white;
+  font-size: 1rem;
+  padding: 5px 15px;
+}
+
+.infos-left {}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+.btn-container button{
+  margin: 5px;
+  background: blue;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 0 ;
+}
+
+.infos-right h3{
+  padding: 9px 0 23px 0px;
+}
+.infos-right img{
+height:40px;
+}
+
+.img-container img{
+  padding: 0 50px 0 50px ;
+
+}
