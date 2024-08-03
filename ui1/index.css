@@ -1,7 +1,11 @@
+/* font telechargée  */
 @font-face {
   font-family: 'Inter Tight Black';
   src: url(./asset/fonts/static/InterTight-Black.ttf);
 }
+
+/* font inportée avec son url de son site d'origine */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -11,9 +15,9 @@
 
 body {
   background: rgb(29, 29, 29);
-  min-height: 50vw;
+  min-height: 100vh;
   width: calc(100% - 5%);
-  font-family: "'Inter Tight Black", Arial, Helvetica, sans-serif;
+  font-family: "inter", "Inter Tight Black", Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
   filter: brightness(120%);
 
@@ -37,11 +41,13 @@ nav {
 ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 li {
-  padding: 0 0 0 200px;
-  align-items: end;
+  /* padding: 0 0 0 200px; */
+  /* align-items: end; */
 }
 
 .header {
@@ -50,26 +56,32 @@ li {
 }
 
 .header-left {
-  padding: 100px 150px 70px 15px;
+  /* padding: 100px 150px 70px 15px; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: rgb(68, 69, 152);
+  color: #474dff;
   filter: contrast(180%);
 }
 
 .header-right {
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  width: 50%;
 
 }
 
-.header-right img {
-  height: 500px;
+#modem {
+  /* height: 500px; */
+  width: 100%;
   /* position: absolute; */
 }
 
@@ -87,28 +99,50 @@ h3 {
   padding: 5px 15px;
 }
 
-.infos-left {}
+.infos-left {
+  width: 33%;
+}
 
 .btn-container {
   display: flex;
   flex-direction: column;
 }
-.btn-container button{
-  margin: 5px;
+
+.btn-container button {
+  margin: 5px 10px;
+  border: none;
   background: blue;
   color: white;
   border-radius: 15px;
-  padding: 5px 0 ;
+  padding: 10px 0;
+  letter-spacing: 1px;
 }
 
-.infos-right h3{
+.infos-right {
+  width: 67%;
+}
+
+.infos-right h3 {
   padding: 9px 0 23px 0px;
 }
-.infos-right img{
-height:40px;
+.investors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
-.img-container img{
-  padding: 0 50px 0 50px ;
+.img-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* .infos-right img {
+  height: 40px;
+} */
+
+.img-container img {
+  /* padding: 0 50px 0 50px; */
+  height: 60px;
 
 }
